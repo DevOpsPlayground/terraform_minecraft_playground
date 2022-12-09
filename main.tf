@@ -47,15 +47,27 @@ module "square" {
   }
 }
 
-// Test minecraft words module
-module "minecraft_words" {
-  source   = "git@github.com:massimilianovallascas/terraform_module_minecraft_words.git"
+// Create a panda out of Minecraft blocks
+module "panda" {
+  source   = "./panda"
   material = "minecraft:stone"
-  string   = "abcdefghijklmnopqrstuvwxyz 0123456789 +-*:= .,;!?\"' \\|/_ ~<>()[]{}"
 
   position = {
     x = var.position.x,
     y = var.position.y,
     z = var.position.z + 40,
+  }
+}
+
+// Test minecraft words module
+module "minecraft_words" {
+  source   = "git@github.com:massimilianovallascas/terraform_module_minecraft_words.git"
+  material = "minecraft:stone"
+  string   = "abcdefghijklmnopqrstuvwxyz0123456789+-*:=.,;!?\"'\\|/_~<>()[]{}"
+
+  position = {
+    x = var.position.x,
+    y = var.position.y,
+    z = var.position.z + 60,
   }
 }

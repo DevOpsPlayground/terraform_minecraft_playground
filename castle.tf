@@ -2,7 +2,7 @@ locals {
   origin = {
     x = var.position.x,
     y = var.position.y,
-    z = var.position.z + 60,
+    z = var.position.z + 100,
   }
 
   towers = {

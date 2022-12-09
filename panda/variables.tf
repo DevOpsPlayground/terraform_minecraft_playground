@@ -4,10 +4,8 @@ variable "position" {
     y = number
     z = number
   })
+}
 
-  default = {
-    x = -20,
-    y = -60,
-    z = 0
-  }
+variable "material" {
+  type = string
 }

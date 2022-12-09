@@ -6,6 +6,7 @@ provider "registry.terraform.io/hashicraft/minecraft" {
   constraints = "0.1.1"
   hashes = [
     "h1:EO5qkKQV8wZ02gJXphgQvKVVfm7fY2+YRlgY+mv/t5c=",
+    "h1:ngS2qygzIe5jMcW/gRyg+oaBaEfix1PDW9WsXCjDD2Y=",
     "zh:0c3bb22a4383aee0c90df96990ef2434abfecd31b483fdf9f0b099ed3dd08539",
     "zh:0d55659154dcf75d6d6dc3e1ec804503dae47d0b494d2c20727ac9260bd769a5",
     "zh:17b30363d3c21368d240891669c34d6b9fa290dc6bcbef224626969ebbbd33fd",
